@@ -481,7 +481,7 @@ class SLGBuilder(ABC):
 
         # Create wrap per object if not supplied.
         if np.isscalar(wrap):
-            wrap = (wrap * np.ones(len(objects))).astype(np.bool)
+            wrap = (wrap * np.ones(len(objects))).astype(bool)
 
         for i, obj in enumerate(objects):
 
